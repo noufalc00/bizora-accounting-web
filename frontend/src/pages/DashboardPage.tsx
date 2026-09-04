@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import api from '../lib/api'
-import { LayoutDashboard, ShoppingCart, Package, TrendingUp, Users, DollarSign } from 'lucide-react'
+import { LayoutDashboard, ShoppingCart, Package, TrendingUp, Users } from 'lucide-react'
 
 interface DashboardStats {
   total_sales: number

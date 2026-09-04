@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { FileText, BarChart3, TrendingUp, Balance } from 'lucide-react'
+import { useState } from 'react'
+import { FileText, BarChart3, TrendingUp, Scale } from 'lucide-react'
 
 const reports = [
   {
     id: 'trial-balance',
     name: 'Trial Balance',
     description: 'View debit and credit balances of all accounts',
-    icon: Balance,
+    icon: Scale,
   },
   {
     id: 'profit-loss',
