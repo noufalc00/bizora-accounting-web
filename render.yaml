@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: bizora-accounting-web
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: DATABASE_URL
+        value: ${DATABASE_URL}
+      - key: SECRET_KEY
+        generateValue: true
+      - key: NODE_ENV
+        value: production
+
+databases:
+  - name: bizora-accounting-db
+    databaseName: bizora_accounting
+    user: bizora_user
